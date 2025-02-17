@@ -17,7 +17,7 @@ html {
     cursor: pointer;
 }
 .dark-mode .hero, 
-.dark-mode .about span,
+.dark-mode .about-card,
 .dark-mode .skills span, 
 .dark-mode .project-card, 
 .dark-mode .education-card, 
@@ -29,7 +29,7 @@ html {
 .dark-mode .skills span {
     background: #333;
 }
-.dark-mode .about span,
+.dark-mode .about-card,
 .dark-mode .project-card, 
 .dark-mode .education-card, 
 .dark-mode .certification-card, 
