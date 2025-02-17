@@ -29,13 +29,16 @@ html {
 .dark-mode .skills span {
     background: #333;
 }
-.dark-mode .about-card,
+.dark-mode .about-card, 
 .dark-mode .project-card, 
 .dark-mode .education-card, 
 .dark-mode .certification-card, 
 .dark-mode .hobbies-card {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
+
+
+
 .skills-container {
     display: flex;
     justify-content: center;
@@ -44,10 +47,14 @@ html {
 }
 .skills-category {
     cursor: pointer;
-    padding: 10px;
-    background: #ffffff;
+   /*padding: 10px;
+    background: #af4343;*/
     border-radius: 5px;
     text-align: center;
+
+    background: white;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .dark-mode .skills-category {
     background: #121212;
@@ -75,6 +82,29 @@ html {
     border-radius: 5px;
 }
 
+.about-card {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.education-card {
+    background: rgb(255, 255, 255);
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.certification-card {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+
 .project-card {
     background: white;
     padding: 20px;
@@ -92,3 +122,33 @@ html {
     background: #121212;
     color: white;
 }
+
+footer {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #007bff; /* You can change the hover color */
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+
