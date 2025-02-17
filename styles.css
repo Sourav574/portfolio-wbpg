@@ -3,6 +3,23 @@ body {
     transition: background 0.3s, color 0.3s;
 }
 
+
+/* Make button fill the width on mobile */
+@media (max-width: 767px) {
+    .btn {
+        width: 100%; /* Ensure the button takes the full width on mobile */
+        padding: 15px; /* Add some extra padding to make it easier to tap */
+        font-size: 18px; /* Make the text on the button bigger on mobile */
+    }
+}
+
+/* Ensure the button is on top of any overlapping elements */
+.btn {
+    position: relative;
+    z-index: 10;
+}
+
+
 html { 
     scroll-behavior: smooth;
     scroll-padding-top: 80px; 
@@ -152,3 +169,20 @@ footer p {
 
 
 
+.skills-list span {
+    display: inline-block;
+    background: #b8afaf;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.skills-list span i {
+    margin-right: 8px;  /* Adds space between the icon and the text */
+    font-size: 20px;    /* Resize icons if needed */
+}
+
+.dark-mode .skills-list span {
+    background: #333;
+}
