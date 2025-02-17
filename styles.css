@@ -46,16 +46,6 @@ html {
 .navbar-nav .nav-link {
     cursor: pointer;
 }
-
-.profile-pic {
-    width: 40px; /* Adjust size */
-    height: 40px;
-    border-radius: 50%; /* Make it circular */
-    margin-right: 10px; /* Space between image and name */
-    object-fit: cover; /* Ensures the image is properly cropped */
-    /*border: 2px solid white; /* Optional: Adds a border */
-}
-
 .dark-mode .hero, 
 .dark-mode .about-card,
 .dark-mode .skills span, 
@@ -107,7 +97,7 @@ html {
 .hero {
     background: linear-gradient(to right, #007bff, #00c6ff);
     color: rgb(163, 8, 163);
-    padding: 100px 0;
+    padding: 80px 0;
 }
 
 .hero span {
@@ -183,6 +173,36 @@ html {
 }
 
 /* Default Light Mode */
+
+
+.skills-list span {
+    display: inline-block;
+    background: #b8afaf;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.skills-list span i {
+    margin-right: 8px;  /* Adds space between the icon and the text */
+    font-size: 20px;    /* Resize icons if needed */
+}
+
+.dark-mode .skills-list span {
+    background: #333;
+}
+
+.profile-pic {
+    width: 40px; /* Adjust size */
+    height: 40px;
+    border-radius: 50%; /* Make it circular */
+    margin-right: 10px; /* Space between image and name */
+    object-fit: cover; /* Ensures the image is properly cropped */
+    /*border: 2px solid white; /* Optional: Adds a border */
+}
+
+
 footer {
     background-color: hsl(0, 0%, 100%);
     color: #000000;
@@ -202,25 +222,4 @@ footer {
 
 .dark-mode footer a:hover {
     color: #00bcd4;
-}
-
-
-
-
-.skills-list span {
-    display: inline-block;
-    background: #b8afaf;
-    padding: 8px 12px;
-    margin: 5px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.skills-list span i {
-    margin-right: 8px;  /* Adds space between the icon and the text */
-    font-size: 20px;    /* Resize icons if needed */
-}
-
-.dark-mode .skills-list span {
-    background: #333;
 }
