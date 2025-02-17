@@ -153,10 +153,7 @@ html {
     color: white;
 }
 
-footer {
-    background-color: #f8f9fa;
-    color: #333;
-}
+
 
 .social-links {
     display: flex;
@@ -175,10 +172,28 @@ footer {
     color: #007bff; /* You can change the hover color */
 }
 
-footer p {
-    margin: 0;
-    font-size: 14px;
+/* Default Light Mode */
+footer {
+    background-color: hsl(0, 0%, 100%);
+    color: #000000;
+    transition: background 0.3s, color 0.3s;
 }
+
+/* Dark Mode */
+.dark-mode footer {
+    background-color: #121212; /* Dark Background */
+    color: #ffffff; /* White Text */
+}
+
+/* Adjust Footer Links in Dark Mode */
+.dark-mode footer a {
+    color: #bbb;
+}
+
+.dark-mode footer a:hover {
+    color: #00bcd4;
+}
+
 
 
 
