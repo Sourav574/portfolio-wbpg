@@ -5,13 +5,26 @@ body {
 
 
 /* Make button fill the width on mobile */
+/* Make navbar links stack on top in mobile */
 @media (max-width: 767px) {
-    .btn {
-        width: 100%; /* Ensure the button takes the full width on mobile */
-        padding: 15px; /* Add some extra padding to make it easier to tap */
-        font-size: 18px; /* Make the text on the button bigger on mobile */
+    .navbar-nav {
+        flex-direction: column; /* Stack items vertically on mobile */
+    }
+
+    .navbar-toggler {
+        margin-right: 20px; /* Adjust for better spacing */
+    }
+
+    .nav-link {
+        padding: 10px 15px; /* Add more padding to make the links easier to tap */
+    }
+
+    /* Make sure the navbar toggle button is visible */
+    .navbar-toggler-icon {
+        background-color: #000; /* Ensure the toggle icon is visible */
     }
 }
+
 
 /* Ensure the button is on top of any overlapping elements */
 .btn {
