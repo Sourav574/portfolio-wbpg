@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    transition: background 0.3s, color 0.3s;
+}
+
+html { 
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; 
+} 
+
+/* Adjust based on navbar height */
+
+html {
+    scroll-behavior: smooth;
+}
+.navbar-nav .nav-link {
+    cursor: pointer;
+}
+.dark-mode .hero, 
+.dark-mode .about span,
+.dark-mode .skills span, 
+.dark-mode .project-card, 
+.dark-mode .education-card, 
+.dark-mode .certification-card, 
+.dark-mode .hobbies-card {
+    background: #222;
+    color: rgb(255, 255, 255);
+}
+.dark-mode .skills span {
+    background: #333;
+}
+.dark-mode .about span,
+.dark-mode .project-card, 
+.dark-mode .education-card, 
+.dark-mode .certification-card, 
+.dark-mode .hobbies-card {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.skills-category {
+    cursor: pointer;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+}
+.dark-mode .skills-category {
+    background: #121212;
+}
+.skills-list {
+    display: none;
+    margin-top: 10px;
+}
+
+.hero {
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: rgb(163, 8, 163);
+    padding: 100px 0;
+}
+
+.hero span {
+    color: rgb(196, 4, 170);
+}
+
+.skills span {
+    display: inline-block;
+    background: #1377db;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.social-icons i {
+    font-size: 30px;
+    margin: 10px;
+    color: rgb(179, 95, 95);
+}
+
+.dark-mode {
+    background: #121212;
+    color: white;
+}
