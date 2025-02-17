@@ -46,6 +46,16 @@ html {
 .navbar-nav .nav-link {
     cursor: pointer;
 }
+
+.profile-pic {
+    width: 40px; /* Adjust size */
+    height: 40px;
+    border-radius: 50%; /* Make it circular */
+    margin-right: 10px; /* Space between image and name */
+    object-fit: cover; /* Ensures the image is properly cropped */
+    border: 2px solid white; /* Optional: Adds a border */
+}
+
 .dark-mode .hero, 
 .dark-mode .about-card,
 .dark-mode .skills span, 
