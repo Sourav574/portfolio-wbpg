@@ -110,26 +110,29 @@
 
     <section id="skills" class="container text-center my-5">
         <h2>Skills</h2>
-        <div class="skills-category">
-            <button onclick="toggleSkills('languages')">💻 Languages</button>
-            <button onclick="toggleSkills('software')">🛠 Software</button>
-            <button onclick="toggleSkills('tools')">🔧 Tools</button>
-        </div>
-        <div id="languages" class="skills-list">
-            <span>Python</span>
-            <span>C++</span>
-            <span>Java</span>
-        </div>
-        <div id="software" class="skills-list">
-            <span>React.js</span>
-            <span>Node.js</span>
-            <span>Figma</span>
-        </div>
-        <div id="tools" class="skills-list">
-            <span>GitHub</span>
-            <span>VS Code</span>
+        <div class="skills-card p-3">
+            <div class="skills-category">
+                <button onclick="toggleSkills('languages')">💻 Languages</button>
+                <button onclick="toggleSkills('software')">🛠 Software</button>
+                <button onclick="toggleSkills('tools')">🔧 Tools</button>
+            </div>
+            <div id="languages" class="skills-list">
+                <span><i class="fab fa-python"></i> Python</span>
+                <span><i class="fab fa-java"></i> Java</span>
+                <span><i class="fab fa-cuttlefish"></i> C++</span>
+            </div>
+            <div id="software" class="skills-list">
+                <span><i class="fab fa-react"></i> React.js</span>
+                <span><i class="fab fa-node"></i> Node.js</span>
+                <span><i class="fab fa-figma"></i> Figma</span>
+            </div>
+            <div id="tools" class="skills-list">
+                <span><i class="fab fa-github"></i> GitHub</span>
+                <span><i class="fab fa-visualstudio"></i> VS Code</span>
+            </div>
         </div>
     </section>
+    
 
     <!-- Projects Section -->
     <section id="projects" class="container my-5">
