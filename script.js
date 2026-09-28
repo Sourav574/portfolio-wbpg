@@ -1,18 +1,17 @@
-/**function toggleSkills(category) {
-    let element = document.getElementById(category);
-    element.style.display = element.style.display === 'block' ? 'none' : 'block';
+function toggleTheme() {
+    document.body.classList.toggle("dark-mode");
+    const button = document.getElementById("theme-toggle");
+    button.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
 }
+document.getElementById("theme-toggle").addEventListener("click", toggleTheme);
 
-document.getElementById('theme-toggle').addEventListener('click', function() {
-    document.body.classList.toggle('dark-mode');
-    this.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
-});**/
-
-function toggleSkills(category) {
-    var section = document.getElementById(category);
-    section.style.display = section.style.display === "block" ? "none" : "block";
-}
-document.getElementById('theme-toggle').addEventListener('click', function() {
-    document.body.classList.toggle('dark-mode');
-    this.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+// Close the mobile navbar after selecting a section.
+document.querySelectorAll(".navbar .nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+        const nav = document.getElementById("navbarNav");
+        if (nav.classList.contains("show")) {
+            const collapse = bootstrap.Collapse.getInstance(nav) || new bootstrap.Collapse(nav, {toggle:false});
+            collapse.hide();
+        }
+    });
 });

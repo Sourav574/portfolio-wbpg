@@ -1,209 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sourav Bose | Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-</head>-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sourav Bose | Portfolio</title>
-    <!-- Updated FontAwesome CDN Link -->
-     
+    <meta name="description" content="Sourav Bose - Network Security and IT Infrastructure professional portfolio.">
+    <title>Sourav Bose | Network Security & IT Infrastructure</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Popper.js (required for Bootstrap's dropdowns, tooltips, etc.) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
-
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#home">
             <img src="dp.png" alt="Sourav Bose" class="profile-pic">
-            Sourav Bose
-            </a> 
-          <!--  <a class="navbar-brand" href="#">Sourav Bose</a> -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">-->
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="resume5.0.pdf">Resume</a></li>
-                    <button id="theme-toggle" class="btn btn-light ms-3">🌙</button>
-                </ul>
-                
+            <span>Sourav Bose</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link resume-link" href="resume5.0.pdf" target="_blank">Resume</a></li>
+                <li class="nav-item"><button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header id="home" class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <p class="eyebrow">NETWORK SECURITY • IT INFRASTRUCTURE</p>
+            <h1>Hi, I'm <span>Sourav Bose</span></h1>
+            <p class="hero-text">Network Security professional working on enterprise security operations, firewall upgrades, incidents, SSL/TLS certificates and infrastructure security.</p>
+            <div class="hero-actions">
+                <a href="#experience" class="btn btn-primary">View Experience</a>
+                <a href="resume5.0.pdf" target="_blank" class="btn btn-outline-light">View Resume</a>
             </div>
         </div>
-    </nav>
+    </div>
+</header>
 
-    <!-- Hero Section -->
-    <header class="hero text-center">
-        <h1>Hi, I'm <span>Sourav Bose</span></h1>
-        <p>BCA Graduate | Tech Enthusiast | Web Developer | IoT Innovator</p>
-    </header>
+<section id="about" class="container section">
+    <div class="section-heading">
+        <span>01</span><h2>About Me</h2>
+    </div>
+    <div class="card about-card">
+        <p>I am a BCA graduate currently working at Wipro in the Network Security Team for the Quest Diagnostics account. My current work involves production network security operations, including PSC firewall upgrades using FortiGuard, incident handling, internal and external SSL/TLS certificate updates with DigiCert, Load Balancer certificate updates, and exceptional policy tickets.</p>
+        <p>My earlier training includes Windows Server administration, Linux, SQL and enterprise networking fundamentals. I enjoy troubleshooting infrastructure issues, learning security technologies and building practical technical skills.</p>
+    </div>
+</section>
 
-    <!-- About Section -->
-    <section id="about" class="container text-center my-5">
-        <h2>About Me</h2>
-        <div class="about-card p-3">
-        <p> A recent Bachelor’s graduate with a strong foundation in programming and software development. I have a problem-solving mindset, effective communication skills, and the ability to collaborate in team environments. I am actively seeking opportunities to apply my knowledge, enhance my skills, and contribute to innovative projects. </p>
+<section id="experience" class="container section">
+    <div class="section-heading">
+        <span>02</span><h2>Experience</h2>
+    </div>
+    <div class="timeline">
+        <article class="experience-card">
+            <div class="experience-top">
+                <div>
+                    <h3>Network Security Administrator / Network Security Analyst</h3>
+                    <p class="company">Wipro — Quest Diagnostics Account</p>
+                </div>
+                <span class="date">2026 — Present</span>
+            </div>
+            <ul>
+                <li>Working as part of the Network Security Team supporting enterprise security operations for the Quest Diagnostics account.</li>
+                <li>Performing PSC Firewall upgrades using FortiGuard, including upgrade activities, validation and post-upgrade checks.</li>
+                <li>Handling network security incidents through initial troubleshooting, analysis, remediation and escalation where required.</li>
+                <li>Managing internal and external SSL/TLS certificate updates and renewals using DigiCert.</li>
+                <li>Supporting SSL certificate deployment and updates on Load Balancers to maintain secure application connectivity.</li>
+                <li>Handling exceptional policy tickets and coordinating policy-related changes according to operational procedures.</li>
+            </ul>
+        </article>
+
+        <article class="experience-card">
+            <div class="experience-top">
+                <div>
+                    <h3>Networking Trainee</h3>
+                    <p class="company">Wipro</p>
+                </div>
+                <span class="date">Training</span>
+            </div>
+            <ul>
+                <li>Enterprise networking training covering switching, VLANs, TCP/IP and basic Cisco IOS concepts.</li>
+                <li>Network troubleshooting methodology and L1/L2 fault isolation.</li>
+                <li>Hands-on familiarity with Cisco IOS CLI for configuration and verification.</li>
+            </ul>
+        </article>
+
+        <article class="experience-card">
+            <div class="experience-top">
+                <div>
+                    <h3>Systems & Infrastructure Trainee</h3>
+                    <p class="company">Wipro</p>
+                </div>
+                <span class="date">Training</span>
+            </div>
+            <ul>
+                <li>Windows Server administration: Active Directory, DNS, DHCP, Group Policy and user/group management.</li>
+                <li>Linux administration: file systems, permissions, shell scripting basics and service configuration.</li>
+                <li>SQL querying, table management and relational database concepts.</li>
+                <li>Completed mandatory corporate onboarding and compliance training.</li>
+            </ul>
+        </article>
+    </div>
+</section>
+
+<section id="skills" class="container section">
+    <div class="section-heading">
+        <span>03</span><h2>Technical Skills</h2>
+    </div>
+    <div class="skill-grid">
+        <div class="card skill-card">
+            <i class="fas fa-shield-alt skill-icon"></i>
+            <h3>Network Security</h3>
+            <p>PSC Firewall, FortiGuard, Network Security Incidents, SSL/TLS Certificates, DigiCert, Load Balancers, Exceptional Policy Tickets</p>
         </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="container my-5">
-        <h2 class="text-center">Education</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="education-card p-3">
-                    <h5>Bachelor of Computer Applications</h5>
-                    <p>Midnapore College (Autonomous)</p>
-                    <!--<p>Completed with high academic achievements</p>-->
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="education-card p-3">
-                    <h5>Higher Secondary Education (HS)</h5>
-                    <p>Kharagpur Silver Jubilee High School (HS)</p>
-                    <!--<p>Completed with high academic achievements</p>-->
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="education-card p-3">
-                    <h5>Secondary Education (Madhyamik)</h5>
-                    <p>Kharagpur Silver Jubilee High School (HS)</p>
-                    <!--<p>Completed with high academic achievements</p>-->
-                </div>
-            </div>
-
-            
+        <div class="card skill-card">
+            <i class="fas fa-network-wired skill-icon"></i>
+            <h3>Networking</h3>
+            <p>VLANs, Switching, TCP/IP Fundamentals, Cisco IOS (Basic), L1/L2 Concepts</p>
         </div>
-        
-    </section>
-
-   <!-- Certifications Section -->
-    <section id="certifications" class="container text-center my-5">
-        <h2>Certifications</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="certification-card p-3">
-                    <h5>Certificate in Information Technology Application</h5>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="certification-card p-3">
-                    <h5>Professional Edge</h5>
-                </div>
-            </div> 
+        <div class="card skill-card">
+            <i class="fab fa-windows skill-icon"></i>
+            <h3>Systems</h3>
+            <p>Windows Server, Active Directory, GPO, NTFS Permissions, DNS, DHCP, Linux</p>
         </div>
-        
-    </section>
-
-   <!-- Skills Section -->
-    <section id="skills" class="container text-center my-5">
-        <h2>Skills</h2>
-        <div class="skills-card p-3">
-            <div class="skills-category">
-                <button onclick="toggleSkills('languages')">💻 Languages</button>
-                <button onclick="toggleSkills('software')">🛠 Software</button>
-                <button onclick="toggleSkills('tools')">🔧 Tools</button>
-            </div>
-            <div id="languages" class="skills-list">
-                <span><i class="fab fa-python"></i> Python</span>
-                <span><i class="devicon-c-plain"></i> C</span>
-                <span><i class="devicon-cplusplus-plain"></i> C++</span>
-                <span><i class="fab fa-java"></i> Java</span>
-                <span><i class="fab fa-html5"></i> HTML</span>
-                <span><i class="fab fa-css3"></i> CSS</span>
-                <span><i class="fab fa-js"></i>JavaScript</span>
-            </div>
-            <div id="software" class="skills-list">
-                <span><i class="devicon-netlify-plain"></i>Netlify</span>
-                <span><i class="devicon-latex-original"></i>LaTeX</span>
-                <span><i class="fab fa-react"></i> React.js</span>
-                <span><i class="fab fa-node"></i> Node.js</span>
-            </div>
-            <div id="tools" class="skills-list">
-                <span><i class="fab fa-github"></i> GitHub</span>
-                <span><i class="devicon-vscode-plain"></i>VS Code</span>
-            </div>
+        <div class="card skill-card">
+            <i class="fas fa-code skill-icon"></i>
+            <h3>Programming & Data</h3>
+            <p>C, C++, Java, JavaScript, Python, R, HTML, CSS, SQL</p>
         </div>
-    </section>
-    
+        <div class="card skill-card">
+            <i class="fas fa-tools skill-icon"></i>
+            <h3>Tools</h3>
+            <p>Microsoft Office, Visual Studio Code, Git, GitHub, Netlify</p>
+        </div>
+    </div>
+</section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="container my-5">
-        <h2 class="text-center">Projects</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="project-card">
-                    <h5>Smart Garage Door System</h5>
-                    <p>Designed and developed an IoT-based Smart Garage Door System using Arduino, HTML, CSS, and JavaScript.</p>
-                    <a href="#" class="btn btn-primary">View Project</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="project-card">
-                    <h5>Portfolio Website</h5>
-                    <p>Designed and developed a portfolio website using HTML, CSS, and JavaScript, GitHub and Netlify.</p>
-                    <a href="https://knowsourav.netlify.app/" class="btn btn-primary">View Project</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="project-card">
-                    <h5>********</h5>
-                    <p>Designed and developed an ******* using ******</p>
-                    <a href="#" class="btn btn-primary">TBA</a>
-                </div>
+<section id="education" class="container section">
+    <div class="section-heading"><span>04</span><h2>Education</h2></div>
+    <div class="row g-4">
+        <div class="col-lg-4">
+            <div class="card info-card">
+                <span class="year">2023</span>
+                <h3>Bachelor of Computer Applications</h3>
+                <p>Midnapore College (Autonomous), Midnapore, West Bengal</p>
+                <strong>GPA: 8.0</strong>
             </div>
         </div>
-    </section>
+        <div class="col-lg-4">
+            <div class="card info-card">
+                <span class="year">2020</span>
+                <h3>Higher Secondary Education</h3>
+                <p>Kharagpur Silver Jubilee High School (HS), Kharagpur</p>
+                <strong>76%</strong>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card info-card">
+                <span class="year">2018</span>
+                <h3>Secondary Education</h3>
+                <p>Kharagpur Silver Jubilee High School (HS), Kharagpur</p>
+                <strong>82%</strong>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer id="contact" class="container text-center my-5">
-        <h5>Contact Me</h5>
+<section id="certifications" class="container section">
+    <div class="section-heading"><span>05</span><h2>Certifications</h2></div>
+    <div class="cert-grid">
+        <div class="card cert-card">Certificate in Information Technology Application</div>
+        <div class="card cert-card">Professional Edge</div>
+        <div class="card cert-card">GitHub Copilot</div>
+        <div class="card cert-card">Generative AI on AWS</div>
+        <div class="card cert-card">Fundamentals of Machine Learning and AI</div>
+        <div class="card cert-card">Windows Admin-L1</div>
+        <div class="card cert-card">JAMF 100</div>
+        <div class="card cert-card">JAMF 170</div>
+    </div>
+</section>
+
+<section id="projects" class="container section">
+    <div class="section-heading"><span>06</span><h2>Projects</h2></div>
+    <div class="row g-4">
+        <div class="col-lg-6">
+            <article class="card project-card">
+                <span class="project-tag">IoT</span>
+                <h3>Smart Garage Door System</h3>
+                <p>Designed and developed an IoT-based Smart Garage Door System using a microcontroller, motor control and web technologies for remote operation.</p>
+                <div class="tech-list"><span>ESP8266</span><span>Arduino</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </article>
+        </div>
+        <div class="col-lg-6">
+            <article class="card project-card">
+                <span class="project-tag">Web</span>
+                <h3>Portfolio Website</h3>
+                <p>Designed and developed a personal portfolio using HTML, CSS and JavaScript, with GitHub and Netlify for project hosting and deployment.</p>
+                <div class="tech-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub</span><span>Netlify</span></div>
+                <a href="https://knowsourav.netlify.app/" target="_blank" class="project-link">Live Portfolio <i class="fas fa-arrow-up-right-from-square"></i></a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact-section">
+    <div class="container text-center">
+        <div class="section-heading centered"><span>07</span><h2>Let's Connect</h2></div>
+        <p>Interested in Network Security, IT Infrastructure and enterprise technology.</p>
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/sourav-bose-45955a21a/" target="_blank" class="social-icon">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/Sourav574" target="_blank" class="social-icon">
-                <i class="fab fa-github"></i>
-            </a>
-            <!--<a href="https://twitter.com/your-profile" target="_blank" class="social-icon">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com/your-profile" target="_blank" class="social-icon">
-                <i class="fab fa-instagram"></i>
-            </a>-->
+            <a href="mailto:souravbose707@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/sourav-bose-45955a21a/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Sourav574" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
         </div>
-        <p>&copy; 2025 Sourav Bose | All Rights Reserved</p>
-    </footer>
-    
-    
-    <script src="script.js"></script>
+        <p class="footer-copy">&copy; 2026 Sourav Bose | All Rights Reserved</p>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
